@@ -4,6 +4,7 @@ import { generateNewUserData } from '../../src/common/testData/generateNewUserDa
 import * as allure from 'allure-js-commons';
 import { parseTestTreeHierarchy } from '../../src/common/helpers/allureHelpers';
 
+
 export const test = base.extend<
   {
     usersNumber;
@@ -84,4 +85,5 @@ export const test = base.extend<
     },
     { scope: 'test', auto: true },
   ],
+
 });
