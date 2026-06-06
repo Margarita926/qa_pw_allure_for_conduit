@@ -19,7 +19,7 @@ export class ProfilePage {
 
   async open() {
     await this.step(`Open 'Your Feed' page`, async () => {
-      await this.page.goto('/profile/{{username}}');
+      await this.page.goto(`/profile/${this.username}`)
     });
   }
 
@@ -36,9 +36,9 @@ async assertBioIsVisible(bio) {
   });
 }
 
-async assertPictureURLIsVisible() {
+async assertPictureURLIsVisible(fakeImageUrl) {
       await this.step('Picture URL is visible',async () => {
-      await expect(this.urlPictureField).toBeVisible();
+      await expect(this.urlPictureField).toBeVisible(fakeImageUrl);
       });
     }
 

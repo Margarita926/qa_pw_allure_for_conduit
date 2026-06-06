@@ -1,5 +1,4 @@
 import { test } from '../_fixtures/fixtures';
-import { generateNewUserData } from '../_fixtures/fixturesGeneric';
 import { SettingsPage } from '../../src/ui/pages/SettingsPage';
 import { ProfilePage } from '../../src/ui/pages/ProfilePage';
 import { signUpUser } from '../../src/ui/actions/auth/signUpUser';

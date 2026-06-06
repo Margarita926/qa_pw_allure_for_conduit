@@ -57,9 +57,9 @@ export class SettingsPage {
     });
   }
 
-    async asserEmailIsVisible() {
+    async asserEmailIsVisible(email) {
       await this.step(`email is visible`, async () => {
-         await expect(this.emailField).toBeVisible();
+         await expect(this.emailField).toBeVisible(email);
       });
     }
   
