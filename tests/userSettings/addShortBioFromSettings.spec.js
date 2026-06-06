@@ -17,7 +17,7 @@ test.beforeEach(async ({ page,user }) => {
 
 });
 
-test('Successful `Sign up` flow test', async ({ user, page }) => {
+test('Add short bio from settings', async ({ user, page }) => {
   const newBio = faker.lorem.sentence();
 
 

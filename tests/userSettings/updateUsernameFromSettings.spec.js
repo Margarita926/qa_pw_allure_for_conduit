@@ -14,12 +14,12 @@ test.beforeEach(async ({ page,user }) => {
   await signUpUser(page, user);
 });
 
-test('Successful `Sign up` flow test', async ({ user, page }) => {
-  
+test('Update username from settings', async ({ user, page }) => {
+
   await settingsPage.open();
   await settingsPage.fillUsername(user.username);
   await settingsPage.clickUpdateButton();
  await page.waitForTimeout(1000); 
 
-  await profilePage.assertUsernameIsVisible();
+  await profilePage.assertUsernameIsVisible(user.username);
 });

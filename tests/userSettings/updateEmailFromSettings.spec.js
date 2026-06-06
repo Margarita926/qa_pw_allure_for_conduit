@@ -16,7 +16,7 @@ test.beforeEach(async ({ page,user }) => {
 
 });
 
-test('Successful `Sign up` flow test', async ({ user, page }) => {
+test('Update email from settings', async ({ user, page }) => {
   await settingsPage.open();
   await settingsPage.fillEmail(user.email);
   await settingsPage.clickUpdateButton();

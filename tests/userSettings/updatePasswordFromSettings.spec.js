@@ -23,11 +23,11 @@ test.beforeEach(async ({ page,user }) => {
 
 });
 
-test('Successful `Sign up` flow test', async ({ user, page }) => {
+test('Update password from settings', async ({ user, page }) => {
 const password = user.password
 
   await settingsPage.open();
-  await settingsPage.fillEmail(password);
+  await settingsPage.fillPassword(password);
   await settingsPage.clickUpdateButton();
   await settingsPage.clickOnLogoutButton();
     

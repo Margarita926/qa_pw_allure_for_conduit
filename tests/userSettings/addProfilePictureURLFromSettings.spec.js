@@ -17,7 +17,7 @@ test.beforeEach(async ({ page,user }) => {
 
 });
 
-test('Successful `Sign up` flow test', async ({ user, page }) => {
+test('Add profile picture URL from settings', async ({ user, page }) => {
 const fakeImageUrl = faker.image.avatar();
 
   await settingsPage.open();

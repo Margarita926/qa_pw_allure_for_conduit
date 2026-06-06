@@ -15,7 +15,7 @@ test.beforeEach(async ({ page,user }) => {
 
 });
 
-test('Successful `Sign up` flow test', async ({ user, page }) => {
+test('Log out user', async ({ user, page }) => {
 
 
   await settingsPage.open();
